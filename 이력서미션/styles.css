@@ -1,0 +1,149 @@
+/* General styling for body and main container */
+@import url("https://statics.goorm.io/fonts/GoormSans/v1.0.0/GoormSans.min.css");
+body {
+  font-family: "Goorm Sans", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수직 중앙 정렬 (컨테이너 내에서 자식 요소의 수평 중앙 정렬) */
+  width: 100%;
+}
+
+header,
+.school,
+.career,
+.skills,
+.portfolio,
+footer {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+}
+
+.schoolimg,
+.lionimg,
+.kakaoimg {
+  width: 50px;
+  height: 50px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap; /* 화면이 작아질 때 이미지가 자동으로 줄 바꿈 되도록 설정 */
+}
+
+.image-container img {
+  max-width: 50px;
+  height: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 수직 중앙 정렬 */
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+header .backbox {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+  top: 0;
+  z-index: -1;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* 수직 중앙 정렬 추가 */
+  margin: 20px 0;
+  width: 100%;
+}
+
+.intro img.profile {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+section {
+  max-width: none;
+  margin: 0 auto;
+  border-top: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p,
+a {
+  margin: 0;
+  padding: 5px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.school,
+.career,
+.skills,
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+  width: 100%;
+}
+
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+}
+
+.footbox {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* 수평 중앙 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+}
+
+@media (max-width: 768px) {
+  .intro,
+  .school,
+  .career,
+  .skills,
+  .portfolio {
+    text-align: center;
+    padding: 10px;
+  }
+  .intro,
+  .school,
+  .career,
+  .skills,
+  .portfolio {
+    align-items: center; /* 수평 중앙 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+  }
+}
